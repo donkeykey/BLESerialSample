@@ -55,10 +55,10 @@
 		4206A71D19BDE99A004399DE /* BLESerialSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLESerialSampleTests-Info.plist"; sourceTree = "<group>"; };
 		4206A71F19BDE99A004399DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4206A72119BDE99A004399DE /* BLESerialSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLESerialSampleTests.m; sourceTree = "<group>"; };
-		42F5F55B19BE08360008BE06 /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLESerialManager.m; sourceTree = "<group>"; };
-		42F5F55C19BE08360008BE06 /* BLESerialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLESerialManager.h; sourceTree = "<group>"; };
-		42F5F55D19BE08360008BE06 /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEBaseClass.h; sourceTree = "<group>"; };
-		42F5F55E19BE08360008BE06 /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEBaseClass.m; sourceTree = "<group>"; };
+		42F5F55B19BE08360008BE06 /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLESerialManager.m; path = BLESerialSample/BLESerialManager.m; sourceTree = "<group>"; };
+		42F5F55C19BE08360008BE06 /* BLESerialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLESerialManager.h; path = BLESerialSample/BLESerialManager.h; sourceTree = "<group>"; };
+		42F5F55D19BE08360008BE06 /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEBaseClass.h; path = BLESerialSample/BLEBaseClass.h; sourceTree = "<group>"; };
+		42F5F55E19BE08360008BE06 /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEBaseClass.m; path = BLESerialSample/BLEBaseClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,7 @@
 		4206A6EA19BDE99A004399DE = {
 			isa = PBXGroup;
 			children = (
+				42F5F56119BE09260008BE06 /* BLELibraly */,
 				4206A6FC19BDE99A004399DE /* BLESerialSample */,
 				4206A71B19BDE99A004399DE /* BLESerialSampleTests */,
 				4206A6F519BDE99A004399DE /* Frameworks */,
@@ -118,10 +119,6 @@
 		4206A6FC19BDE99A004399DE /* BLESerialSample */ = {
 			isa = PBXGroup;
 			children = (
-				42F5F55C19BE08360008BE06 /* BLESerialManager.h */,
-				42F5F55B19BE08360008BE06 /* BLESerialManager.m */,
-				42F5F55D19BE08360008BE06 /* BLEBaseClass.h */,
-				42F5F55E19BE08360008BE06 /* BLEBaseClass.m */,
 				4206A70519BDE99A004399DE /* AppDelegate.h */,
 				4206A70619BDE99A004399DE /* AppDelegate.m */,
 				4206A70819BDE99A004399DE /* Main.storyboard */,
@@ -160,6 +157,17 @@
 				4206A71E19BDE99A004399DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42F5F56119BE09260008BE06 /* BLELibraly */ = {
+			isa = PBXGroup;
+			children = (
+				42F5F55C19BE08360008BE06 /* BLESerialManager.h */,
+				42F5F55B19BE08360008BE06 /* BLESerialManager.m */,
+				42F5F55D19BE08360008BE06 /* BLEBaseClass.h */,
+				42F5F55E19BE08360008BE06 /* BLEBaseClass.m */,
+			);
+			name = BLELibraly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
