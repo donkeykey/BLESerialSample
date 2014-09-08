@@ -56,7 +56,7 @@ static BLESerialManager *manager = nil;
 //            NSLog(@"Receive value=%@",characteristic.value);
             uint8_t*	buf = (uint8_t*)[characteristic.value bytes]; //bufに結果が入る
             //_textField.text = [NSString stringWithFormat:@"%d", buf[0]];
-            NSLog(@"buf : %s", buf);
+            NSLog(@"d -> i : %s", buf);
     
 			return;
 		}
