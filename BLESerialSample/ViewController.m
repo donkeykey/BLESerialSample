@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BLESerialManager.h"
 
 @interface ViewController ()
 
@@ -18,12 +19,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[BLESerialManager sharedManager] initBLE];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onTouchConnectBtn:(id)sender {
+    [[BLESerialManager sharedManager] connect];
+}
+- (IBAction)onTouchDisconnectBtn:(id)sender {
+    [[BLESerialManager sharedManager] disconnect];
+}
+
+- (IBAction)onTouchSendBtn:(id)sender {
+    [[BLESerialManager sharedManager] sendStr:[NSString stringWithFormat:@"HOGE"]];
 }
 
 @end

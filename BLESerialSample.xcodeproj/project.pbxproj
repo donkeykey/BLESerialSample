@@ -21,6 +21,8 @@
 		4206A71819BDE99A004399DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206A6FA19BDE99A004399DE /* UIKit.framework */; };
 		4206A72019BDE99A004399DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4206A71E19BDE99A004399DE /* InfoPlist.strings */; };
 		4206A72219BDE99A004399DE /* BLESerialSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4206A72119BDE99A004399DE /* BLESerialSampleTests.m */; };
+		4206A72F19BDEA5E004399DE /* BLESerialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4206A72B19BDEA5E004399DE /* BLESerialManager.m */; };
+		4206A73019BDEA5E004399DE /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4206A72E19BDEA5E004399DE /* BLEBaseClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		4206A71D19BDE99A004399DE /* BLESerialSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLESerialSampleTests-Info.plist"; sourceTree = "<group>"; };
 		4206A71F19BDE99A004399DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4206A72119BDE99A004399DE /* BLESerialSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLESerialSampleTests.m; sourceTree = "<group>"; };
+		4206A72B19BDEA5E004399DE /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLESerialManager.m; path = ../../../../Downloads/BLESerial_test_iPhone5/BLESerial_test_iPhone5/BLESerialManager.m; sourceTree = "<group>"; };
+		4206A72C19BDEA5E004399DE /* BLESerialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLESerialManager.h; path = ../../../../Downloads/BLESerial_test_iPhone5/BLESerial_test_iPhone5/BLESerialManager.h; sourceTree = "<group>"; };
+		4206A72D19BDEA5E004399DE /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEBaseClass.h; path = ../../../../Downloads/BLESerial_test_iPhone5/BLEBaseClass.h; sourceTree = "<group>"; };
+		4206A72E19BDEA5E004399DE /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEBaseClass.m; path = ../../../../Downloads/BLESerial_test_iPhone5/BLEBaseClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		4206A6FC19BDE99A004399DE /* BLESerialSample */ = {
 			isa = PBXGroup;
 			children = (
+				4206A72C19BDEA5E004399DE /* BLESerialManager.h */,
+				4206A72B19BDEA5E004399DE /* BLESerialManager.m */,
+				4206A72D19BDEA5E004399DE /* BLEBaseClass.h */,
+				4206A72E19BDEA5E004399DE /* BLEBaseClass.m */,
 				4206A70519BDE99A004399DE /* AppDelegate.h */,
 				4206A70619BDE99A004399DE /* AppDelegate.m */,
 				4206A70819BDE99A004399DE /* Main.storyboard */,
@@ -251,7 +261,9 @@
 			files = (
 				4206A70D19BDE99A004399DE /* ViewController.m in Sources */,
 				4206A70719BDE99A004399DE /* AppDelegate.m in Sources */,
+				4206A73019BDEA5E004399DE /* BLEBaseClass.m in Sources */,
 				4206A70319BDE99A004399DE /* main.m in Sources */,
+				4206A72F19BDEA5E004399DE /* BLESerialManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +468,7 @@
 				4206A72719BDE99A004399DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4206A72819BDE99A004399DE /* Build configuration list for PBXNativeTarget "BLESerialSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +477,7 @@
 				4206A72A19BDE99A004399DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
